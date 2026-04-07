@@ -21,7 +21,7 @@ module.exports = (params, useAxios) => {
     area_code: 1,
     hash: (params?.hash || '').toLowerCase(),
     ssa_flag: 'is_fromtrack',
-    version: 11436,
+    version: 11430,
     page_id,
     quality: quality || 128,
     album_audio_id: Number(params.album_audio_id ?? 0),
@@ -33,8 +33,8 @@ module.exports = (params, useAxios) => {
     IsFreePart: params?.free_part ? 1 : 0, //是否返回试听部分（仅部分歌曲）
     ppage_id,
     cdnBackup: 1,
-    kcard: 0,
     module: '',
+    clientver: 11430,
   };
   
   return useAxios({
